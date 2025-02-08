@@ -281,7 +281,7 @@ header nav a {
   gap: 0.5rem;
 }
 
-.hero button {
+.hero button, .whatsapp {
   padding: 0.75rem 1.5rem;
   border: 2px solid var(--primary-color);
   background-color: transparent;
@@ -833,13 +833,14 @@ section {
       gap: 2rem;
       align-items: start;
 
-      button {
+      .whatsapp {
         padding: 10px 20px;
         border: 2px solid var(--primary-color);
         border-radius: 10px;
         background-color: transparent;
         transition: all 500ms ease-in-out;
         cursor: pointer;
+        color: #000;
 
 
         &:hover {
@@ -1174,7 +1175,7 @@ footer {
     .btns {
       flex-direction: column;
 
-      button {
+      a {
         justify-content: center;
       }
     }
