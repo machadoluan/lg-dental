@@ -16,6 +16,22 @@
   list-style: none;
 }
 
+.aviso {
+  background-color: var(--primary-color);
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  font-size: 14px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -68,7 +84,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 40px;
   background: var(--highlight-color);
   color: var(--primary-color);
   padding: 1rem 5rem;
@@ -1034,6 +1050,51 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+
+  .tecnologias {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 4rem;
+
+    .title {
+      color: #333;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: fadeIn 1.5s ease-in-out;
+
+      .first-cards,
+      .secound-cards {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .secound-cards {
+        margin-top: 100px;
+        flex-direction: column;
+
+        .card {
+          width: 100%;
+          display: flex;
+          gap: 1rem;
+
+          img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+
   .transformacoes {
     display: flex !important;
     flex-direction: column;
@@ -1067,6 +1128,10 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .aviso {
+    font-size: 12px;
+  }
+
   .fotos-container {
     width: 100%;
     margin: 0 auto;
