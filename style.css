@@ -96,7 +96,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-left: 170px;
 
   #logo {
     width: 80px;
@@ -106,6 +105,8 @@ header .container {
 .links nav {
   display: flex;
   gap: 1rem;
+  padding-left: 170px;
+
 }
 
 header nav a {
