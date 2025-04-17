@@ -96,6 +96,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding-left: 170px;
 
   #logo {
     width: 80px;
